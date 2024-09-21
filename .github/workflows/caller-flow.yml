@@ -9,5 +9,5 @@ jobs:
       - name: shelltask
         run: pwd;ls
       - name: "This is build job"
-        uses: .github\workflows\flow1.yaml@master
+        uses: ./.github/workflows/flow1.yml
 
