@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: code Checks-out
+        env:
+          server_port: 8081
         uses: actions/checkout@v3
       - name: run unit test
         run: mvn test
