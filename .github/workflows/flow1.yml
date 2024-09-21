@@ -11,5 +11,10 @@ jobs:
         run: mvn test
       - name: run build
         run: mvn clean package
+      - name: upload-artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifactjava
+          path: targets
 
           
