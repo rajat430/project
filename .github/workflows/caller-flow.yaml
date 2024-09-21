@@ -4,6 +4,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: code Checks-out
+        uses: actions/checkout
+      - name: shelltask
+        run: pwd;ls
       - name: "This is build job"
         uses: .github\workflows\flow1.yaml@master
 
