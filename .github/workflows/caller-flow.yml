@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: code Checks-out
-        uses: actions/checkout
+        uses: actions/checkout@v3
       - name: shelltask
         run: pwd;ls
       - name: "This is build job"
