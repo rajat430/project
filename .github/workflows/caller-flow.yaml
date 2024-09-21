@@ -1,0 +1,9 @@
+name: parentflow
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "This is build job"
+        uses: .\project\.github\workflows\flow1.yaml
+
