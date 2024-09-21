@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "This is build job"
-        uses: .\project\.github\workflows\flow1.yaml
+        uses: .\project\.github\workflows\flow1.yaml@main
 
