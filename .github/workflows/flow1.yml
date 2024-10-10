@@ -5,18 +5,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: code Checks-out
-        env:
-          server_port: 8081
-        uses: actions/checkout@v3
-      - name: run unit test
-        run: mvn test
-      - name: run build
-        run: mvn clean package
-      - name: upload-artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: artifactjava
-          path: target
+      - name: child
+        run: echo "child workflow"
 
           
